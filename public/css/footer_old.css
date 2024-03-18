@@ -1,0 +1,92 @@
+footer{
+    position: relative;
+    width: 100%;
+    padding: 40px 10vw 80px;
+    background: #383838;
+}
+
+.footer-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-content .logo{
+    height: 60px;
+}
+
+.footer-ul-container{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category{
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /*  создание 2х колонок. Повторяет 1fr 2 раза. fr (fractional unit) дробная единица или единица гибкости */
+    grid-gap: 10px;
+    list-style: none;
+}
+
+.category-title{
+    grid-column: span 2;    /* аналог: 1 / span 2 */
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.category .footer-link{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(220, 220, 220, 0.95);  /* цвет и последняя цифра - проздрачность в % */
+}
+
+.footer-link:hover{
+    color: #fff;
+    text-shadow: 3px 3px 3px black;
+}
+
+.footer-title, .info{
+    color: rgb(220, 220, 220, 0.95);
+    margin: 20px 0;
+    /*text-transform: capitalize;*/
+}
+
+.footer-title{
+    margin-top: 80px;
+    color: #fff;
+}
+
+.footer-social-container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-link{
+    color: #fff;
+    margin-left: 20px;
+    text-transform: capitalize;
+    text-decoration: none;  /* без none линк будет подчеркнут */
+}
+
+.social-link:hover{
+    text-shadow: 3px 3px 2px black;  /* тень на текст */
+}
+
+.social-link:nth-child(1){
+    margin-left: 0;
+}
+
+.footer-credit{
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    color: #fff;
+    background: rgb(0, 0, 0, 0.2);
+}

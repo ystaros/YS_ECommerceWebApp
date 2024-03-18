@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+/*    height: 100px;*/   /* высота всей полосы меню */
+/*    background: #DCDCDC;    !* цвет фона всей полосы меню серый *!*/
+    background: #f5f5f5;    /* цвет фона всей полосы меню серый */
+    z-index: 9;
+}
+
+.nav{
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-logo{
+    height: 60px;
+    /*box-shadow: inset 20px 1px 12px #d8dcd3;*/
+    /*border-radius: 5px;*/
+}
+
+.brand-logo:hover {
+    box-shadow: 20px 1px 12px #d8dcd3;
+    border-radius: 5px;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    width: 500px;
+    display: flex;
+}
+
+.search-box{   /* поле для ввода поиска */
+    width: 80%;
+    height: 40px;
+    padding: 10px;  /* Padding is the space between the content and the border */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #d1d1d1;
+    /*text-transform: capitalize;*/
+    background: none;
+    color: #383838;
+
+
+    outline: none;
+}
+
+.search-btn{
+    width: 20%;
+    height: 40px;
+    padding: 10px 20px; /* Расположение: сверху, справа, снизу и слева */
+    border: 1px solid #d1d1d1; /* Цвет рамки */
+    outline: none;
+    cursor: pointer;
+    background: none;
+    /*background: black;*/
+    /*background: #383838;   !* цвет фона кнопки Search *!*/
+    color: #afa1a1;   /* цвет букв кнопки Search */
+    /*color: #fff;   !* цвет букв кнопки Search*!*/
+    /*color: #FF7518;*/
+    text-transform: capitalize;  /* первая буква будет заглавной */
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.search-box::placeholder{
+    color: #a9a9a9; /* цвет букв в поле ввода Search*/
+    /*color: #00FF00;*/
+}
+
+.nav-items a{
+    margin-left: 20px;  /* размер между иконками человечка и корзины */
+}
+
+.nav-items a img{
+    width: 30px;   /* размер иконок человечка и корзины */
+}
+
+.links-container{     /* меню home  women men  accessories */
+    width: 100%;
+    display: flex;
+    padding: 10px 10vw;  /* расстояние межно меню и линией */
+    justify-content: center;
+    list-style: none;
+    border-top: 1px solid #d1d1d1;   /* цвет и тип/толщина линии между шапкой и телом страницы */
+}
+
+.link{               /* стиль линка */
+    text-decoration: none;
+    /*text-transform: capitalize;*/
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 10px;
+    margin: 0 5px;
+    /*color: red;*/
+    color: #383838;
+    opacity: 0.7;
+    /*opacity: 0.5;*/
+    transition: .1s;
+    /*transition: .5s;*/
+
+}
+
+.link:hover{
+    opacity: 0.9;  /* глубина смены цвета меню 1 или 200 нет разницы. Утопить: 0.1 */
+    text-shadow: 3px 3px 4px rgba(211, 207, 207, 0.65);
+}
+

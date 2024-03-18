@@ -1,0 +1,67 @@
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /*-ms-overflow-style: none;*/
+    /*scrollbar-width: none;*/
+
+}
+
+.search-results{
+    width: 100%;
+    padding: 60px 0;
+}
+
+.heading{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 40px;
+    padding: 0 10vw;
+}
+
+.heading span{
+    font-weight: 700;
+}
+
+/*.product-container{   !* формирование картинок в столбцы *!*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(4, 1fr);*/
+/*    height: auto;*/
+/*    grid-row-gap: 40px;*/
+/*}*/
+
+.product-search-container {
+    width: 90%;
+    margin-left: 10px;
+    /*background-color: #4C4F3C;*/  /* фон страницы с карточками, открывающейся во время поиска */
+    /*overflow: auto;*/
+    overflow-x: hidden; /* убрать полосы прокрутки на странице поиска по горизонтали */
+    overflow-y: hidden; /* убрать полосы прокрутки на странице поиска по вертикали */
+    /*white-space: nowrap;*/
+    padding: 0 10vw;
+    scroll-behavior: smooth;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: auto;
+    grid-row-gap: 40px;
+}
+
+
+@media screen and (max-width: 1255px) {       /* через @media можно прописать код для разных разрешений экрана */
+    .product-search-container {
+        width: 95%;
+        margin-left: 5px;
+        /*background-color: #4C4F3C;*/  /* фон страницы с карточками, открывающейся во время поиска */
+        /*overflow: auto;*/
+        /*overflow-x: hidden; !* убрать полосы прокрутки на странице поиска по горизонтали *!*/
+        /*overflow-y: hidden; !* убрать полосы прокрутки на странице поиска по вертикали *!*/
+        /*white-space: nowrap;*/
+        padding: 0 5vw;
+        /*scroll-behavior: smooth;*/
+        /*display: grid;*/
+        grid-template-columns: repeat(4, 1fr);
+        /*height: auto;*/
+        grid-row-gap: 20px;
+    }
+
+}

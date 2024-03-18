@@ -1,0 +1,177 @@
+footer{
+    position: relative;
+    width: 100%;
+    padding: 40px 10vw 60px;
+    background: #383838;
+    /*font-family: 'roboto', sans-serif;*/
+}
+
+/*.footer-content{*/
+/*    display: flex;*/
+/*    width: 100%;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+
+.footer-content { /* from Ira */
+    width: 100%;
+    /*padding: 0px 160px 0 0px;*/
+}
+
+.footer-content .logo{
+    height: 60px;
+    box-shadow: inset 20px 1px 12px #302c2c;
+    /*box-shadow: inset 9px 7px 3px 1px #302c2c;*/
+    /*box-shadow: 5px 5px 10px black;*/
+    border-radius: 5px;
+}
+
+.logo-slogan .logo {
+    width: 90%;
+    height: fit-content;
+    /*border-bottom: 1px solid #cbb26a;*/
+}
+
+.logo-slogan .slogan {
+    width: 100%;
+    /*color: #FFFFBC;*/
+    /*color: #82630A;*/
+    color: #99750f;
+    /*background-color: #DCDCDC;*/
+    /*color: #cbb26a;*/
+    /*text-shadow: 1px 1px 2px black;*/
+    /*text-shadow: 2px 1px 1px black;*/
+    text-shadow: 3px 3px 2px black;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 10px;
+    padding: 0 0 0 80px;
+    /*font-weight: bold;*/
+    /*font-family: 'Comic Sans',  sans-serif;*/
+    /*font-family: 'roboto', sans-serif;*/
+}
+
+.footer-about-container {
+    width: 100%;
+    padding: 0 13px;
+}
+
+/*.footer-ul-container{*/
+/*    width: 45%;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+/*.footer-about {*/
+/*    width: 45%;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+.footer-about {    /* from Ira */
+    display: grid;
+    grid-template-columns: 273px fit-content(100%);
+    width: 100%;
+    justify-content: space-between;
+}
+
+.category{
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /*  создание 2х колонок. Повторяет 1fr 2 раза. fr (fractional unit) дробная единица или единица гибкости */
+    grid-gap: 10px;
+    list-style: none;
+}
+
+.category-title{
+    grid-column: span 2;    /* аналог: 1 / span 2 */
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/*.category .footer-link{*/   /* пока не надо. убрала эти линки */
+/*    text-decoration: none;*/
+/*    text-transform: capitalize;*/
+/*    color: rgb(220, 220, 220, 0.95);  !* цвет и последняя цифра - проздрачность в % *!*/
+/*}*/
+
+/*.footer-link:hover{*/  /* пока не надо. убрала эти линки */
+/*    color: #fff;*/
+/*    text-shadow: 3px 3px 3px black;*/
+/*}*/
+
+/*.footer-title, .info{    /*  old  */
+/*    color: rgb(220, 220, 220, 0.95);*/
+/*    margin: 20px 0;*/
+/*    !*text-transform: capitalize;*!*/
+/*}*/
+
+.logo-slogan .info-email{
+    text-decoration: none;  /* без none линк будет подчеркнут */
+    color: #f8f8f8;
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+.logo-slogan .info-phone{
+    text-decoration: none;   /* Убрать подчеркивание для всех гиперссылок */
+    color: #f8f8f8;
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+.info {     /* from Irina */
+    color: #f8f8f8;
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+.footer-title{     /* from Irina */
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #99750f;
+    text-shadow: 1px 1px 2px black;
+    /*font-weight: bold;*/
+    /*border-bottom: 1px solid #cbb26a;*/
+    border-bottom: 1px solid #99750f;   /* line under About Company */
+}
+
+/*.footer-title{*/
+/*    margin-top: 80px;*/
+/*    color: #fff;*/
+/*}*/
+
+.footer-social-container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-link{
+    text-decoration: none;  /* без none линк будет подчеркнут */
+    color: #fff;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.social-link:hover{
+    color: #99750f;
+    text-shadow: 3px 3px 2px black;  /* тень на текст */
+}
+
+.social-link:nth-child(1){
+    margin-left: 0;
+}
+
+.footer-credit{
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    color: #fff;
+    background: rgb(0, 0, 0, 0.2);
+}

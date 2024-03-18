@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YS Fashion | Clothing:Cart</title>
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/cart.css">
+
+    <!--    Код для иконки генерируется на сайте https://favicon.io/favicon-generator/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon_io/site.webmanifest">
+    <!--  end Код для иконки генерируется на сайте     -->
+
+</head>
+<body>
+
+    <nav class="navbar"></nav>
+
+    <div class="cart-section">
+        <div class="product-list">
+
+            <p class="section-heading">your cart</p>
+            <div class="cart">
+            <!-- cart product does here   -->
+<!--                <img src="img/empty-cart.png" class="empty-img" alt="">-->
+                    <!--   вместо нижних div вставили картинку строкой выше и потом ее тоже закомментировали  -->
+                <div class="sm-product">
+                    <img src="img/product_image_1.png" class="sm-product-img" alt="">
+                    <div class="sm-text">
+                        <p class="sm-product-name">BRAND</p>
+                        <p class="sm-des">this is a short line about</p>
+                    </div>
+                    <div class="item-counter">
+                        <button class="counter-btn decrement">-</button>
+                        <p class="item-count">1</p>
+                        <button class="counter-btn increment">+</button>
+                    </div>
+                    <p class="sm-price">$20</p>
+                    <button class="sm-delete-btn"><img src="img/close.png" alt=""></button>
+                </div>
+            </div>
+
+            <p class="section-heading">your wishlist</p>
+            <div class="wishlist">
+                <!-- wishlist product does here   -->
+            </div>
+
+        </div>
+        <div class="checkout-section">
+            <div class="checkout-box">
+                <p class="text">your total bill,</p>
+                <h1 class="bill">$00</h1>
+                <a href="/checkout" class="checkout-btn">checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <footer></footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/footer.js"></script>
+
+</body>
+</html>

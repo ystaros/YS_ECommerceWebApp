@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YS Fashion | Search Results for </title>
+
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/search.css">
+
+    <!--    Код для иконки генерируется на сайте https://favicon.io/favicon-generator/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon_io/site.webmanifest">
+    <!--  end Код для иконки генерируется на сайте     -->
+
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+
+</head>
+<body>
+
+    <nav class="navbar"></nav>
+
+<!--  все комментируем между nav и footer, так как это жестко прописанный код был нужен для примера, сейчас выдается результ поиска   -->
+<!--    <section class="search-results">-->
+<!--        <h2 class="heading">search results for <span>product</span></h2>-->
+
+<!--    &lt;!&ndash;     product-containers    &ndash;&gt;-->
+<!--        <div class="product-container">-->
+
+<!--            &lt;!&ndash;   list of cards         &ndash;&gt;-->
+<!--            <div class="product-card">-->
+<!--                <div class="product-image">-->
+<!--                    <span class="discount-tag">50% off</span>-->
+<!--                    <img src="../img/card1.png" class="product-thumb" alt="">  &lt;!&ndash; картиники/cards под фразой best selling  &ndash;&gt;-->
+<!--                    <button class="card-btn">add to wishlist</button>-->
+<!--                </div>-->
+<!--                <div class="product-info">-->
+<!--                    <h2 class="product-brand">brand</h2>-->
+<!--                    <p class="product-short-des">a short line about the cloth..</p>-->
+<!--                    <span class="price">$20</span><span class="actual-price">$40</span>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="product-card">-->
+<!--                <div class="product-image">-->
+<!--                    <span class="discount-tag">50% off</span>-->
+<!--                    <img src="../img/card2.png" class="product-thumb" alt="">  &lt;!&ndash; картиники/cards под фразой best selling  &ndash;&gt;-->
+<!--                    <button class="card-btn">add to wishlist</button>-->
+<!--                </div>-->
+<!--                <div class="product-info">-->
+<!--                    <h2 class="product-brand">brand</h2>-->
+<!--                    <p class="product-short-des">a short line about the cloth..</p>-->
+<!--                    <span class="price">$20</span><span class="actual-price">$40</span>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="product-card">-->
+<!--                <div class="product-image">-->
+<!--                    <span class="discount-tag">50% off</span>-->
+<!--                    <img src="../img/card3.png" class="product-thumb" alt="">  &lt;!&ndash; картиники/cards под фразой best selling  &ndash;&gt;-->
+<!--                    <button class="card-btn">add to wishlist</button>-->
+<!--                </div>-->
+<!--                <div class="product-info">-->
+<!--                    <h2 class="product-brand">brand</h2>-->
+<!--                    <p class="product-short-des">a short line about the cloth..</p>-->
+<!--                    <span class="price">$20</span><span class="actual-price">$40</span>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="product-card">-->
+<!--                <div class="product-image">-->
+<!--                    <span class="discount-tag">50% off</span>-->
+<!--                    <img src="../img/card4.png" class="product-thumb" alt="">  &lt;!&ndash; картиники/cards под фразой best selling  &ndash;&gt;-->
+<!--                    <button class="card-btn">add to wishlist</button>-->
+<!--                </div>-->
+<!--                <div class="product-info">-->
+<!--                    <h2 class="product-brand">brand</h2>-->
+<!--                    <p class="product-short-des">a short line about the cloth..</p>-->
+<!--                    <span class="price">$20</span><span class="actual-price">$40</span>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="product-card">-->
+<!--                <div class="product-image">-->
+<!--                    <span class="discount-tag">50% off</span>-->
+<!--                    <img src="../img/card5.png" class="product-thumb" alt="">  &lt;!&ndash; картиники/cards под фразой best selling  &ndash;&gt;-->
+<!--                    <button class="card-btn">add to wishlist</button>-->
+<!--                </div>-->
+<!--                <div class="product-info">-->
+<!--                    <h2 class="product-brand">brand</h2>-->
+<!--                    <p class="product-short-des">a short line about the cloth..</p>-->
+<!--                    <span class="price">$20</span><span class="actual-price">$40</span>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="product-card">-->
+<!--                <div class="product-image">-->
+<!--                    <span class="discount-tag">50% off</span>-->
+<!--                    <img src="../img/card6.png" class="product-thumb" alt="">  &lt;!&ndash; картиники/cards под фразой best selling  &ndash;&gt;-->
+<!--                    <button class="card-btn">add to wishlist</button>-->
+<!--                </div>-->
+<!--                <div class="product-info">-->
+<!--                    <h2 class="product-brand">brand</h2>-->
+<!--                    <p class="product-short-des">a short line about the cloth..</p>-->
+<!--                    <span class="price">$20</span><span class="actual-price">$40</span>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="product-card">-->
+<!--                <div class="product-image">-->
+<!--                    <span class="discount-tag">50% off</span>-->
+<!--                    <img src="../img/card7.png" class="product-thumb" alt="">  &lt;!&ndash; картиники/cards под фразой best selling  &ndash;&gt;-->
+<!--                    <button class="card-btn">add to wishlist</button>-->
+<!--                </div>-->
+<!--                <div class="product-info">-->
+<!--                    <h2 class="product-brand">brand</h2>-->
+<!--                    <p class="product-short-des">a short line about the cloth..</p>-->
+<!--                    <span class="price">$20</span><span class="actual-price">$40</span>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="product-card">-->
+<!--                <div class="product-image">-->
+<!--                    <span class="discount-tag">50% off</span>-->
+<!--                    <img src="../img/card8.png" class="product-thumb" alt="">  &lt;!&ndash; картиники/cards под фразой best selling  &ndash;&gt;-->
+<!--                    <button class="card-btn">add to wishlist</button>-->
+<!--                </div>-->
+<!--                <div class="product-info">-->
+<!--                    <h2 class="product-brand">brand</h2>-->
+<!--                    <p class="product-short-des">a short line about the cloth..</p>-->
+<!--                    <span class="price">$20</span><span class="actual-price">$40</span>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="product-card">-->
+<!--                <div class="product-image">-->
+<!--                    <span class="discount-tag">50% off</span>-->
+<!--                    <img src="../img/card9.png" class="product-thumb" alt="">  &lt;!&ndash; картиники/cards под фразой best selling  &ndash;&gt;-->
+<!--                    <button class="card-btn">add to wishlist</button>-->
+<!--                </div>-->
+<!--                <div class="product-info">-->
+<!--                    <h2 class="product-brand">brand</h2>-->
+<!--                    <p class="product-short-des">a short line about the cloth..</p>-->
+<!--                    <span class="price">$20</span><span class="actual-price">$40</span>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="product-card">-->
+<!--                <div class="product-image">-->
+<!--                    <span class="discount-tag">50% off</span>-->
+<!--                    <img src="../img/card10.png" class="product-thumb" alt="">  &lt;!&ndash; картиники/cards под фразой best selling  &ndash;&gt;-->
+<!--                    <button class="card-btn">add to wishlist</button>-->
+<!--                </div>-->
+<!--                <div class="product-info">-->
+<!--                    <h2 class="product-brand">brand</h2>-->
+<!--                    <p class="product-short-des">a short line about the cloth..</p>-->
+<!--                    <span class="price">$20</span><span class="actual-price">$40</span>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="product-card">-->
+<!--                <div class="product-image">-->
+<!--                    <span class="discount-tag">50% off</span>-->
+<!--                    <img src="../img/card11.png" class="product-thumb" alt="">  &lt;!&ndash; картиники/cards под фразой best selling  &ndash;&gt;-->
+<!--                    <button class="card-btn">add to wishlist</button>-->
+<!--                </div>-->
+<!--                <div class="product-info">-->
+<!--                    <h2 class="product-brand">brand</h2>-->
+<!--                    <p class="product-short-des">a short line about the cloth..</p>-->
+<!--                    <span class="price">$20</span><span class="actual-price">$40</span>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="product-card">-->
+<!--                <div class="product-image">-->
+<!--                    <span class="discount-tag">50% off</span>-->
+<!--                    <img src="../img/card12.png" class="product-thumb" alt="">  &lt;!&ndash; картиники/cards под фразой best selling  &ndash;&gt;-->
+<!--                    <button class="card-btn">add to wishlist</button>-->
+<!--                </div>-->
+<!--                <div class="product-info">-->
+<!--                    <h2 class="product-brand">brand</h2>-->
+<!--                    <p class="product-short-des">a short line about the cloth..</p>-->
+<!--                    <span class="price">$20</span><span class="actual-price">$40</span>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="product-card">-->
+<!--                <div class="product-image">-->
+<!--                    <span class="discount-tag">50% off</span>-->
+<!--                    <img src="../img/card13.png" class="product-thumb" alt="">  &lt;!&ndash; картиники/cards под фразой best selling  &ndash;&gt;-->
+<!--                    <button class="card-btn">add to wishlist</button>-->
+<!--                </div>-->
+<!--                <div class="product-info">-->
+<!--                    <h2 class="product-brand">brand</h2>-->
+<!--                    <p class="product-short-des">a short line about the cloth..</p>-->
+<!--                    <span class="price">$20</span><span class="actual-price">$40</span>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash;   end list of cards         &ndash;&gt;-->
+<!--        </div>-->
+<!--    &lt;!&ndash;    end product-containers     &ndash;&gt;-->
+<!--    </section>-->
+<!--  END все комментируем между nav и footer, так как это жестко прописанный код был нужен для примера, сейчас выдается результ поиска    -->
+
+    <section class="search-results">
+        <h2 class="heading">Search results for <span id="search-key"></span></h2>
+        <section class="card-container"></section>
+    </section>
+
+    <section class="product product-you-may-also-liked"></section>
+
+    <footer></footer>
+
+    <script src="../js/nav.js"></script>
+    <script src="../js/realDBConnect.js"></script>
+    <script src="../js/realDBSearch.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/footer.js"></script>
+
+</body>
+</html>

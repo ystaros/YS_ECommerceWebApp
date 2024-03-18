@@ -1,0 +1,208 @@
+footer {
+    position: relative;
+    width: 100%;
+    background: #383838;
+}
+
+.footer-content {
+    width: 100%;
+    padding: 40px 160px 0 150px;
+}
+
+.footer-about {
+    display: grid;
+    grid-template-columns: 273px fit-content(100%);
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #82630A;
+    text-shadow: 1px 1px 2px black;
+}
+
+.info {
+    color: #f8f8f8;
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+.logo-slogan .logo {      /* line under logo */
+    width: 90%;
+    height: fit-content;
+    /*border-bottom: 1px solid #cbb26a;*/
+}
+
+.logo-slogan .slogan {
+    width: 100%;
+    /*color: #FFFFBC;*/
+    color: #82630A;
+    text-shadow: 1px 1px 2px black;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 11px;
+    padding: 0 0 0 80px;
+}
+
+.footer-about-container {
+    width: 100%;
+    padding: 0 13px;
+}
+
+.footer-info-container {
+    display: grid;
+    grid-template-columns: fit-content(30%) fit-content(30%) fit-content(20%) fit-content(20%);
+    grid-gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    padding: 0 40px 0 10px;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    width: 100%;
+    list-style: none;
+}
+
+.contact-info-title{
+    text-transform: uppercase;
+    font-size: 14px;
+    /*color: #FFFFBC;*/
+    color: #82630A;
+    text-shadow: 1px 1px 2px black;
+}
+
+.contact-info-link {
+    text-decoration: none;
+    color: #f8f8f8;
+    padding: 5px 0;
+    font-size: 13px;
+}
+
+.footer-bottom {
+    height: 80px;
+    width: 100%;
+}
+
+/*!*1552 * 480*!*/
+/*@media screen and (max-width: 1552px) {*/
+/*    .footer-content {*/
+/*        padding: 40px 110px 0 150px;*/
+/*    }*/
+/*}*/
+
+/*!*1513 * 480*!*/
+/*@media screen and (max-width: 1513px) {*/
+/*    .footer-content {*/
+/*        padding: 40px 70px 0 150px;*/
+/*    }*/
+/*}*/
+
+/*1409 * 480*/
+@media screen and (max-width: 1409px) {
+    .footer-content {
+        padding: 40px 20px 0 150px;
+    }
+}
+
+/*!*1452 * 480*!*/
+/*@media screen and (max-width: 1452px) {*/
+/*    .info {*/
+/*        font-size: 14px;*/
+/*    }*/
+/*}*/
+
+/*!*1391 * 480*!*/
+/*@media screen and (max-width: 1391px) {*/
+/*    .info {*/
+/*        font-size: 13px;*/
+/*    }*/
+/*}*/
+
+/*1343 * 480*/
+@media screen and (max-width: 1343px) {
+    .footer-content {
+        padding: 40px 20px 0 20px;
+    }
+    .footer-about {
+        grid-template-columns: 235px auto;
+        justify-content: start;
+    }
+    .logo-slogan .slogan {
+        font-size: 10px;
+    }
+    .info {
+        font-size: 12px;
+    }
+}
+
+/*!*1176 * 480*!*/
+/*@media screen and (max-width: 1176px) {*/
+/*    .footer-about {*/
+/*        grid-template-columns: 210px auto;*/
+/*    }*/
+/*    .logo-slogan .slogan {*/
+/*        font-size: 8px;*/
+/*    }*/
+/*    .info {*/
+/*        font-size: 10px;*/
+/*    }*/
+/*    .contact-info-title, .footer-title{*/
+/*        font-size: 12px;*/
+/*    }*/
+/*    .contact-info-link{*/
+/*        font-size: 12px;*/
+/*    }*/
+/*}*/
+
+/*738 * 480*/
+@media screen and (max-width: 738px) {
+    .footer-about {
+        grid-template-columns: 25% auto;
+        padding: 0 0;
+    }
+    .footer-about-container {
+        padding: 0 0;
+    }
+    .logo-slogan .slogan {
+        font-size: 7px;
+    }
+    .footer-info-container {
+        grid-gap: 5px;
+        padding: 0 0;
+    }
+    .contact-info {
+        padding: 0;
+    }
+}
+
+/*655 * 480*/
+@media screen and (max-width: 652px) {
+    .footer-about {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .logo-slogan, .logo-slogan .logo, .logo-slogan .slogan {
+        visibility: hidden;
+        height: 0;
+    }
+    .contact-info-title{
+        text-transform: uppercase;
+        font-size: 12px;
+        /*color: #FFFFBC;*/
+        color: #82630A;
+        text-shadow: 1px 1px 2px black;
+    }
+    .contact-info-link {
+        text-decoration: none;
+        color: #f8f8f8;
+        padding: 5px 0;
+        font-size: 11px;
+    }
+}

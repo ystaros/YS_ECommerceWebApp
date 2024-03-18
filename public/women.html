@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YS Fashion | Page Women</title>
+
+    <link rel="stylesheet" href="css/women.css">
+<!--    <link rel="stylesheet" href="css/search.css">-->
+    <link rel="stylesheet" href="css/home.css">
+
+<!--    Код для иконки генерируется на сайте https://favicon.io/favicon-generator/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon_io/site.webmanifest">
+<!--  end Код для иконки генерируется на сайте     -->
+
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+
+</head>
+<body onload=loadData()>    <!--  для загрузки базы -->
+
+    <nav class="navbar"></nav>
+
+<!--    <div class="content-container background-image">-->
+<!--&lt;!&ndash;        <img src="img/women-collection.png" class="four-0-for-image" alt="">&ndash;&gt;-->
+<!--    </div>-->
+
+    <div class="content-container image-container background-image">
+        <p class="collection-title">women apparels</p>
+        <p class="collection-short-des">where elegance and fashion unite, <br> allowing every woman <br>
+            to explore her unique style <br>  without bounds.</p>
+    </div>
+
+    <section class="product women-results" id="womenResults">
+        <section class="card-container"></section>
+    </section>
+
+    <section class="product product-you-may-also-liked"></section>
+    <section class="product product-shoes"></section>
+    <section class="product product-accessories"></section>
+
+
+    <footer>
+    </footer>
+
+    <script src="../js/realDBConnect.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/footer.js"></script>
+
+</body>
+</html>
