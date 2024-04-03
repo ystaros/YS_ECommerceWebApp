@@ -23,6 +23,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const realDBSearch = firebase.database();
 const products = realDBSearch.ref("products");
+const orders = realDBSearch.ref("orders");
 
 //console.log(firebase);
 function cleanTags(tags) {
