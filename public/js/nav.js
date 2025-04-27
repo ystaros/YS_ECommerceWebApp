@@ -14,7 +14,8 @@ const createNav = () => {
         </div>
      
             <a href="#"><img src="../img/user.png" alt=""></a>
-            <a href="#"><img src="../img/cart.png" alt=""></a>
+            <a href="/cart/order"><img src="../img/cart.png" alt></a>
+            
         </div>
     </div>
     <ul class="links-container">

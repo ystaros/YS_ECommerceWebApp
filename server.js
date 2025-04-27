@@ -105,7 +105,7 @@ app.get('/search/:key', (req, res) => {
     res.sendFile(path.join(staticPath, 'search.html'));
 })
 
-app.get("/cart", (req, res) => {
+app.get("/cart/:id", (req, res) => {
     res.sendFile(path.join(staticPath, "cart.html"));
 })
 app.get("/checkout", (req, res) => {

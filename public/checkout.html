@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clothing : Checkout</title>
 
-    <link rel="stylesheet" href="css/signup.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/cart.css">
-    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+<!--    <link rel="stylesheet" href="../css/products.css">-->
 
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
 
 </head>
 <body>
@@ -43,15 +45,18 @@
     </div>
     <div class="checkout-section">
         <div class="checkout-box">
-            <p class="text">your total bill,</p>
+            <p class="text">your total bill</p>
             <h1 class="bill">$00</h1>
-            <button class="place-order-btn">place order</button>
+            <button class="place-order-btn" onclick="window.location.href = '/mail'">place order</button>
+
         </div>
     </div>
 </div>
 
-<script src="js/nav.js"></script>
-<script src="js/cart.js"></script>
+<script src="../js/realDBConnect.js"></script>
+<script src="../js/nav.js"></script>
+<script src="../js/cart.js"></script>
+<script src="../js/footer.js"></script>
 <!-- <script src="js/token.js"></script> -->
 
 </body>
