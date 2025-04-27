@@ -7,27 +7,7 @@ const firebaseConfig = {
     messagingSenderId: "728465921539",
     appId: "1:728465921539:web:7f856d993ce586e58ae036"
 };
-// DB Natasha
-// const firebaseConfig = {
-//     apiKey: "AIzaSyA-us3zHWXXRHcEVMpDQQ04w7FnZMXEWFo",
-//     authDomain: "ns-ecommercewebapp.firebaseapp.com",
-//     databaseURL: "https://ns-ecommercewebapp-default-rtdb.firebaseio.com",
-//     projectId: "ns-ecommercewebapp",
-//     storageBucket: "ns-ecommercewebapp.appspot.com",
-//     messagingSenderId: "149082383099",
-//     appId: "1:149082383099:web:fc650796d72e388a3a465e"
-// };
 // ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑
-
-// const firebaseConfig = {
-//     apiKey: "AIzaSyCB-JoobxE4Jkyq-HWgfkZFWszZhjTFfXs",
-//     authDomain: "ajshop-be1e0.firebaseapp.com",
-//     databaseURL: "https://ajshop-be1e0-default-rtdb.firebaseio.com",
-//     projectId: "ajshop-be1e0",
-//     storageBucket: "ajshop-be1e0.appspot.com",
-//     messagingSenderId: "136800496353",
-//     appId: "1:136800496353:web:b8972f32172498b3bbe5a0"
-// };
 
 firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
@@ -57,6 +37,7 @@ function loadData() {
             snapshot.forEach(function (element) {
                 let data = element.val();
                 data.id = element.key.toString().replace("+ ", "").trim();
+                console.log(data.id);
 
                 getCategoryProducts(data, '1');
                 getCategoryProducts(data, '2');
@@ -102,7 +83,6 @@ function getProductById(data, id) {
         let itemId = data.id.toString().replaceAll(",", "");
 
         if (itemId === id) {
-
             //setting up texts
             const name = document.querySelector('.product-brand');
             const shortDes = document.querySelector('.product-short-des');
