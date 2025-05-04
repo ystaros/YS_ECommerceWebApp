@@ -7,17 +7,18 @@ const path = require('path');
 
 // require('dotenv').config();
 
-let serviceAccount = require("./public/credentials/ysecommercewebapp-firebase-adminsdk-7rbkk-f90b2575cc.json");
+// let serviceAccount = require("./public/credentials/ysecommercewebapp-firebase-adminsdk-7rbkk-f90b2575cc.json");
 // const {initializeApp} = require("firebase/app");
 // const {firebaseConfig} = require("./config/firebaseConfig");
 
-admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount),
+admin.initializeApp(
+    // {
+    // credential: admin.credential.cert(serviceAccount),
     // firebaseConfig,
-});
+// }
+);
 
 let db = admin.firestore();
-
 let staticPath = path.join(__dirname, "public");
 
 const app = express();
