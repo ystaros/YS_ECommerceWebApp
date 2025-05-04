@@ -274,7 +274,7 @@ const createProductCard = (result) => {
     return `
          <div class="product-card" onclick="location.href='/product/${result.id}'">
              <div class="product-image">
-                 <img src="${result.images[0]}" class="product-thumb" alt="">
+                 <img src="${result.images[0]}" class="product-thumb" alt=""
 <!--                 <img src = "../img/AJShop/bag-icon.png" class = "bag-quick" alt = "" >-->
              </div>
              <div class="product-info">
