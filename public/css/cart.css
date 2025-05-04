@@ -55,13 +55,13 @@
 }
 
 .sm-product-name{
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     text-transform: capitalize;
 }
 
 .sm-des, .sm-size{
-    font-size: 18px;
+    font-size: 15px;
     opacity: 0.5;
     line-height: 25px;
     text-transform: capitalize;
@@ -148,12 +148,18 @@
     cursor: pointer;
     height: 40px;
     border-radius: 5px;
-    background: #383838;
+    background: #A5A5A5;
+    /*background: #383838;*/
     color: #fff;
     text-align: center;
     line-height: 40px;
     text-transform: capitalize;
     text-decoration: none;
+}
+
+.checkout-btn:hover, .place-order-btn:hover{
+    background: #383838;  /* цвет кнопки при наведении мыши */
+    color: #fff;
 }
 
 .bill{
